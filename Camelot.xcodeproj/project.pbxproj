@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D14E50B1B389335004FEB66 /* ConsentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D14E50A1B389335004FEB66 /* ConsentController.swift */; };
 		5DA0BBE21B386FF2008DAE1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA0BBE11B386FF2008DAE1A /* AppDelegate.swift */; };
 		5DA0BBE51B386FF2008DAE1A /* Camelot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DA0BBE31B386FF2008DAE1A /* Camelot.xcdatamodeld */; };
-		5DA0BBE71B386FF2008DAE1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA0BBE61B386FF2008DAE1A /* ViewController.swift */; };
 		5DA0BBEA1B386FF2008DAE1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA0BBE81B386FF2008DAE1A /* Main.storyboard */; };
 		5DA0BBEC1B386FF2008DAE1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DA0BBEB1B386FF2008DAE1A /* Images.xcassets */; };
 		5DA0BBEF1B386FF2008DAE1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA0BBED1B386FF2008DAE1A /* LaunchScreen.xib */; };
 		5DA0BBFB1B386FF2008DAE1A /* CamelotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA0BBFA1B386FF2008DAE1A /* CamelotTests.swift */; };
+		5DA0BC161B387192008DAE1A /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA0BC0B1B387090008DAE1A /* ResearchKit.framework */; };
+		5DA0BC171B387192008DAE1A /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA0BC0B1B387090008DAE1A /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DA0BC1E1B3872C0008DAE1A /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA0BC1D1B3872C0008DAE1A /* ConsentDocument.swift */; };
+		5DA0BC201B388084008DAE1A /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA0BC1F1B388084008DAE1A /* ConsentTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,20 +28,58 @@
 			remoteGlobalIDString = 5DA0BBDB1B386FF2008DAE1A;
 			remoteInfo = Camelot;
 		};
+		5DA0BC0A1B387090008DAE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA0BC041B38708F008DAE1A /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		5DA0BC0C1B387090008DAE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA0BC041B38708F008DAE1A /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		5DA0BC181B387192008DAE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA0BC041B38708F008DAE1A /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5DA0BC1A1B387192008DAE1A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DA0BC171B387192008DAE1A /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5D14E50A1B389335004FEB66 /* ConsentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentController.swift; sourceTree = "<group>"; };
 		5DA0BBDC1B386FF2008DAE1A /* Camelot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camelot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA0BBE01B386FF2008DAE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DA0BBE11B386FF2008DAE1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DA0BBE41B386FF2008DAE1A /* Camelot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Camelot.xcdatamodel; sourceTree = "<group>"; };
-		5DA0BBE61B386FF2008DAE1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5DA0BBE91B386FF2008DAE1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DA0BBEB1B386FF2008DAE1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5DA0BBEE1B386FF2008DAE1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5DA0BBF41B386FF2008DAE1A /* CamelotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamelotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA0BBF91B386FF2008DAE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DA0BBFA1B386FF2008DAE1A /* CamelotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamelotTests.swift; sourceTree = "<group>"; };
+		5DA0BC041B38708F008DAE1A /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		5DA0BC1D1B3872C0008DAE1A /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentDocument.swift; path = ../ConsentDocument.swift; sourceTree = "<group>"; };
+		5DA0BC1F1B388084008DAE1A /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentTask.swift; path = ../ConsentTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA0BC161B387192008DAE1A /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +104,7 @@
 		5DA0BBD31B386FF2008DAE1A = {
 			isa = PBXGroup;
 			children = (
+				5DA0BC041B38708F008DAE1A /* ResearchKit.xcodeproj */,
 				5DA0BBDE1B386FF2008DAE1A /* Camelot */,
 				5DA0BBF71B386FF2008DAE1A /* CamelotTests */,
 				5DA0BBDD1B386FF2008DAE1A /* Products */,
@@ -79,9 +123,10 @@
 		5DA0BBDE1B386FF2008DAE1A /* Camelot */ = {
 			isa = PBXGroup;
 			children = (
-				5DA0BBE11B386FF2008DAE1A /* AppDelegate.swift */,
-				5DA0BBE61B386FF2008DAE1A /* ViewController.swift */,
+				5D14E50A1B389335004FEB66 /* ConsentController.swift */,
 				5DA0BBE81B386FF2008DAE1A /* Main.storyboard */,
+				5DA0BC1F1B388084008DAE1A /* ConsentTask.swift */,
+				5DA0BC1D1B3872C0008DAE1A /* ConsentDocument.swift */,
 				5DA0BBEB1B386FF2008DAE1A /* Images.xcassets */,
 				5DA0BBED1B386FF2008DAE1A /* LaunchScreen.xib */,
 				5DA0BBE31B386FF2008DAE1A /* Camelot.xcdatamodeld */,
@@ -93,6 +138,7 @@
 		5DA0BBDF1B386FF2008DAE1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5DA0BBE11B386FF2008DAE1A /* AppDelegate.swift */,
 				5DA0BBE01B386FF2008DAE1A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -115,6 +161,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5DA0BC051B38708F008DAE1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DA0BC0B1B387090008DAE1A /* ResearchKit.framework */,
+				5DA0BC0D1B387090008DAE1A /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +180,12 @@
 				5DA0BBD81B386FF2008DAE1A /* Sources */,
 				5DA0BBD91B386FF2008DAE1A /* Frameworks */,
 				5DA0BBDA1B386FF2008DAE1A /* Resources */,
+				5DA0BC1A1B387192008DAE1A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5DA0BC191B387192008DAE1A /* PBXTargetDependency */,
 			);
 			name = Camelot;
 			productName = Camelot;
@@ -182,6 +239,12 @@
 			mainGroup = 5DA0BBD31B386FF2008DAE1A;
 			productRefGroup = 5DA0BBDD1B386FF2008DAE1A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5DA0BC051B38708F008DAE1A /* Products */;
+					ProjectRef = 5DA0BC041B38708F008DAE1A /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5DA0BBDB1B386FF2008DAE1A /* Camelot */,
@@ -189,6 +252,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5DA0BC0B1B387090008DAE1A /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 5DA0BC0A1B387090008DAE1A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DA0BC0D1B387090008DAE1A /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 5DA0BC0C1B387090008DAE1A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5DA0BBDA1B386FF2008DAE1A /* Resources */ = {
@@ -215,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DA0BBE71B386FF2008DAE1A /* ViewController.swift in Sources */,
+				5D14E50B1B389335004FEB66 /* ConsentController.swift in Sources */,
+				5DA0BC1E1B3872C0008DAE1A /* ConsentDocument.swift in Sources */,
+				5DA0BC201B388084008DAE1A /* ConsentTask.swift in Sources */,
 				5DA0BBE21B386FF2008DAE1A /* AppDelegate.swift in Sources */,
 				5DA0BBE51B386FF2008DAE1A /* Camelot.xcdatamodeld in Sources */,
 			);
@@ -236,6 +318,11 @@
 			isa = PBXTargetDependency;
 			target = 5DA0BBDB1B386FF2008DAE1A /* Camelot */;
 			targetProxy = 5DA0BBF51B386FF2008DAE1A /* PBXContainerItemProxy */;
+		};
+		5DA0BC191B387192008DAE1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 5DA0BC181B387192008DAE1A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,6 +500,7 @@
 				5DA0BC001B386FF2008DAE1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DA0BC011B386FF2008DAE1A /* Build configuration list for PBXNativeTarget "CamelotTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +509,7 @@
 				5DA0BC031B386FF2008DAE1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
